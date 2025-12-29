@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Bites</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    section {
+      scroll-margin-top: 80px;
+      margin-bottom: 40px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 40px;
+      color: #d94f4f;
+    }
+    h3 {
+      margin: 15px 0 5px;
+      font-weight: 600;
+    }
+    .menu-item {
+      margin-bottom: 20px;
+    }
+    .menu-item .price {
+      float: right;
+      color: #555;
+    }
+    section#dishes img,
+    section#drinks img {
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+    section#dishes img:hover,
+    section#drinks img:hover {
+      transform: scale(1.05);
+    }
+    #contact p {
+      margin: 5px 0;
+    }
+    p {
+      margin: 10px 0;
+      text-align: justify;
+    }
+    img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+    }
+    div > p {
+      text-align: center;
+    }
+    .bio {
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand text-danger font-weight-bold" href="#about">Jerry Restaurant</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#dishes">Main Dishes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing & Deals</a></li>
+        <li class="nav-item"><a class="nav-link" href="#drinks">Milkshakes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fresh_juices">Fresh Juices</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <section id="about" class="bio" data-aos="">
+    <h2>About Us</h2>
+    <p>Welcome to Jerry Restaurant – Taste of South India with a Cool Twist! Step into a world of rich tradition and bold flavors where we serve authentic South Indian delicacies. From crispy dosas and fluffy idlis to spicy sambar and tangy chutneys, every dish is made with love.</p>
+    <p>And yes — we’ve added a refreshing twist to your dining experience with creamy, chilled milkshakes. Whether you're in the mood for a hearty meal or a sweet sip, we’ve got something special for everyone.</p>
+  </section>
+
+  <section id="menu" data-aos="">
+    <h2>Our Combo</h2>
+    <div class="menu-item">
+      <h3>Meals <span class="price">₹99</span></h3>
+      <p>Unlimited Rice, Sambar, Rasam, Curd, Payasam.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Non-Veg <span class="price">₹450</span></h3>
+      <p>Biryani, Full Grill Chicken, Chicken Soup, [Coke or Pepsi]</p>
+    </div>
+    <div class="menu-item">
+      <h3>Milk Shakes <span class="price">₹199</span></h3>
+      <p>Pick any milkshake flavor of your choice.</p>
+    </div>
+  </section>
+
+  <section id="pricing" data-aos="">
+    <h2>Pricing & Deals</h2>
+    <p>
+        🍽️ South Indian Meals</br>
+Mini Tiffin – ₹89</br>
+(Includes 1 Idli, 1 Vada, Mini Dosa, Upma & Sambar)</br>
+
+Masala Dosa – ₹75</br>
+
+Ghee Podi Idli (2 pcs) – ₹60</br>
+
+Pongal with Chutney & Sambar – ₹70</br>
+
+Veg South Meals (Unlimited) – ₹120</br>
+
+Poori with Masala Curry (2 pcs) – ₹60 </br>
+
+🥤 Milkshakes (300ml)</br>
+Classic Chocolate – ₹90</br>
+
+Strawberry Cream – ₹85</br>
+
+Oreo Blast – ₹100</br>
+
+Mango Magic – ₹90</br>
+
+Dry Fruit Delight – ₹110</br>
+
+🔥 Combo Deals</br>
+Breakfast Combo – ₹149</br>
+(2 Idlis + 1 Vada + Masala Dosa + Filter Coffee)</br>
+
+Lunch Special – ₹179</br>
+(Unlimited Meals + Buttermilk + Mini Sweet)</br>
+
+Dosa + Shake Combo – ₹145</br>
+(Masala Dosa + Any Classic Shake)</br>
+
+Milkshake Trio Deal – ₹250</br>
+(Any 3 Shakes – Your Choice!)</br>
+
+🛵 Free Delivery on orders above ₹399</br>
+🎁 Weekly Offer - Buy any 2 milkshakes, get 1 mini dosa FREE!</br>
+💳 Cash, UPI & Card Payments Accepted</br>
+    </p>
+  </section>
+
+  <section id="dishes">
+    <h2>Main Dishes</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <div data-aos="zoom-in"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ5RUXpc2an4TVb6GpvJ3QnGfbpK088-SKSw&s" alt="Dosa"><p>Dosa</p></div>
+      <div data-aos="zoom-in"><img src="https://t3.ftcdn.net/jpg/03/62/02/26/360_F_362022640_fZ6UM0JycJlFDdBiR1pYlNddKfdGvYwR.jpg" alt="Idly"><p>Idly</p></div>
+      <div data-aos="zoom-in"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT2PeKQCHUjPexAsmR8fgPfEhtrKgjHYNKcg&s" alt="Chapati"><p>Chapati</p></div>
+      <div data-aos="zoom-in"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSPN9Tp0rosG5_Pk-mRL1y_3OkQZHmOdChZw&s" alt="Upma"><p>Upma</p></div>
+    </div>
+  </section>
+
+  <section id="drinks">
+    <h2>Cool Drinks & Fresh Juices</h2>
+    <h3 style="color:#d94f4f;">Milkshakes</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <div data-aos="fade-up"><img src="https://thumbs.dreamstime.com/b/glass-pink-liquid-rose-top-floating-creating-beautiful-elegant-presentation-concept-romance-sophistication-366170206.jpg" alt="Rose Milk"><p>Rose Milk</p></div>
+      <div data-aos="fade-up"><img src="https://aartimadan.com/wp-content/uploads/2021/03/Badam-Milk.jpg" alt="Badam Milk"><p>Badam Milk</p></div>
+      <div data-aos="fade-up"><img src="https://res.cloudinary.com/hksqkdlah/image/upload/SFS_ultimate_chocolate_milkshake_046_ckxyhg.jpg" alt="Chocolate Milkshake"><p>Chocolate Milkshake</p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE5B56zpinWx4yxMubqXvqX_lKM6MCQkOxig&s" alt="Oreo Milkshake"><p>Oreo Milkshake</p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT84fyYL1Abv4sCBXeFslFpqip3hlGtW69cNQ&s" alt="KitKat Milkshake"><p>KitKat Milkshake</p></div>
+    </div>
+  </section>
+
+  <section id="fresh_juices">
+    <h3 style="color:#d94f4f;margin-top:40px;">Fresh Juices</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl-RUHhb-CIk5FduPFYNo4uVqD5XxLI3kWHQ&s" alt="Watermelon Juice"><p>Watermelon Juice</p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzTmWNSXLdJxw0FgEmG5zHPsaetWtNtMggxg&s" alt="Apple Juice"><p>Apple Juice</p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_wcxOB-hXT7fH4A72mcajHWIfCwj6Q7Nf5A&s" alt="Orange Juice"><p>Orange Juice</p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj507bLnPlLPEjCdk4bzQgHa4AU2dy0O1HuA&s" alt="Pomegranate Juice"><p>Pomegranate Juice</p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZHfcJAzi-ihG52FryhjGZexKK2zWAx1sDg&s" alt="Sweet Lime Juice"><p>Sweet Lime Juice</p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt72P0qmkYbNG0Fh12bFEskRAROFfkdeeg7Q&s" alt="Lemon Juice"><p>Lemon Juice</p></div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h3 style="color:#d94f4f;margin-top:40px;">Our Achievements</h3>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5WfVVxaCccjcIvH_4NWKfoxC5ZYcIRnGwlQ&s" alt="Apple Juice"><p></p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4AcOd8W7kakBFA-GTwbr3-ZvDPKxGAHPigQ&s" alt="Apple Juice"><p></p></div>
+      <div data-aos="fade-up"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeCMa0iSSm5chLoqSp1XmB5fruftHGPxdWeg&s" alt="Apple Juice"><p></p></div>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-down">
+    <h2>Contact Us</h2>
+    <p>Email: jerryrestaurant@gmail.com</p>
+    <p>Phone: +91 987654321</p>
+    <p>Address: Dubai Kuruku Santhu,<br>Dubai Main Road,<br>Dubai 600-001.</p>
+  </section>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+</body>
+</html>
